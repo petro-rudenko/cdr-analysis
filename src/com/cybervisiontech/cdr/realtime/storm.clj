@@ -10,7 +10,7 @@
   (let [cdr (gen/gen-cdr)]
     (spout
      (nextTuple []
-       (emit-spout! collector [cdr]))
+       (emit-spout! collector cdr))
      (ack [id]
         ;; You only need to define this method for reliable spouts
         ;; (such as one that reads off of a queue like Kestrel)
