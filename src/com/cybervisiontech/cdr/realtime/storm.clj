@@ -29,7 +29,7 @@
 (defn mk-topology []
   (topology 
    {"1" (spout-spec cdr-generator :p 4)}
-   {"2" (bolt-spec {"1" :shuffle #_"calling-party"}  ;;This bolt would make aggregation on calling party
+   {"2" (bolt-spec {"1" ["calling-party"]}  ;;This bolt would make aggregation on calling party
                     dummy-hdfs-passer :p 10)}))
 
 
