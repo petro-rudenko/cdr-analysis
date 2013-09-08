@@ -8,7 +8,7 @@ Install [Leiningen](http://leiningen.org/)
 ```
 lein deps
 lein compile
-lein run -m com.cybervisiontech.cdr.realtime.storm
+lein run -m com.cybervisiontech.cdr.realtime.TopologySubmitter
 ```
 
 TODO
